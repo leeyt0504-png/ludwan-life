@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>甪端精緻生命事業股份有限公司 ｜ 殯葬禮儀服務</title>
+<meta name="description" content="甪端精緻生命事業股份有限公司，提供專業、誠摯、合宜的殯葬禮儀服務。涵蓋中西式火化、各宗教禮儀、寶塔顧問與全程協助，以同理與尊重陪伴家屬走過人生最後一程。" />
+<meta name="keywords" content="甪端,甪端精緻,甪端精緻生命事業,殯葬禮儀,生命禮儀,葬儀社,禮儀公司,生前契約,寶塔顧問,台北禮儀公司" />
+<meta property="og:title" content="甪端精緻生命事業股份有限公司｜殯葬禮儀服務" />
+<meta property="og:description" content="以同理與尊重，陪伴家屬走過人生最後一程。" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f5f0;
+    --bg-soft:#efece4;
+    --ink:#2c2a26;
+    --ink-soft:#5b574f;
+    --line:#ddd6c8;
+    --gold:#a8884e;
+    --gold-deep:#8a6d38;
+    --green:#46584a;
+    --green-deep:#33433a;
+    --white:#fffdf9;
+    --shadow:0 18px 50px -24px rgba(40,35,25,.45);
+    --radius:14px;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans TC",-apple-system,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{font-family:"Noto Serif TC",serif;font-weight:600;letter-spacing:.02em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{position:relative}
+
+  /* ===== NAV ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    transition:.35s ease;
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:var(--maxw);margin:0 auto;padding:16px 24px;
+    transition:.35s ease;
+  }
+  .brand{display:flex;align-items:center;gap:12px;color:var(--white)}
+  .brand .mark{width:42px;height:42px;border-radius:50%;background:#15110c;
+    display:grid;place-items:center;padding:5px;flex:0 0 auto;border:1px solid rgba(255,255,255,.25)}
+  .brand .mark img{width:100%;height:100%;object-fit:contain}
+  .brand .txt b{font-family:"Noto Serif TC",serif;font-size:18px;font-weight:600;display:block;line-height:1.3}
+  .brand .txt span{font-size:11px;letter-spacing:.32em;opacity:.8}
+  .menu{display:flex;gap:30px;align-items:center}
+  .menu a{color:var(--white);font-size:15px;opacity:.9;position:relative;padding:4px 0}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold);transition:.3s}
+  .menu a:hover{opacity:1}
+  .menu a:hover::after{width:100%}
+  .nav-cta{background:var(--gold);color:#fff !important;padding:9px 20px;border-radius:30px;font-size:14px;opacity:1 !important}
+  .nav-cta::after{display:none}
+  .nav-cta:hover{background:var(--gold-deep)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px}
+  .burger span{width:26px;height:2px;background:var(--white);transition:.3s}
+
+  header.scrolled{background:rgba(247,245,240,.96);backdrop-filter:blur(10px);box-shadow:0 2px 20px -10px rgba(0,0,0,.3)}
+  header.scrolled .nav{padding-top:10px;padding-bottom:10px}
+  header.scrolled .brand{color:var(--ink)}
+  header.scrolled .menu a{color:var(--ink-soft)}
+  header.scrolled .burger span{background:var(--ink)}
+
+  /* ===== HERO ===== */
+  .hero{
+    min-height:100vh;display:flex;align-items:center;
+    background:linear-gradient(rgba(28,34,29,.62),rgba(28,34,29,.5)),url("assets/lake.jpg") center/cover fixed;
+    color:var(--white);position:relative;
+  }
+  .hero .wrap{padding-top:120px;padding-bottom:80px}
+  .hero .eyebrow{letter-spacing:.45em;font-size:13px;opacity:.85;margin-bottom:22px}
+  .hero h1{font-size:clamp(32px,5.4vw,60px);line-height:1.35;font-weight:700;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+  .hero p.lead{font-size:clamp(16px,2vw,20px);max-width:620px;margin:26px 0 38px;font-weight:300;opacity:.95}
+  .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:32px;font-size:16px;font-weight:500;transition:.3s;cursor:pointer;border:0}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:var(--gold-deep);transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(4px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.22)}
+  .hero-phone{position:absolute;right:24px;bottom:30px;text-align:right;font-size:14px;opacity:.85}
+  .hero-phone b{font-family:"Noto Serif TC",serif;font-size:22px;display:block;letter-spacing:.05em}
+
+  /* ===== SECTION HEADINGS ===== */
+  .sec{padding:96px 0}
+  .sec-tag{color:var(--gold-deep);letter-spacing:.3em;font-size:13px;font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+  .sec-tag::before{content:"";width:34px;height:1px;background:var(--gold)}
+  .sec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.4;margin-bottom:8px}
+  .sec .sub{color:var(--ink-soft);max-width:680px;margin-top:14px;font-weight:300}
+
+  /* ===== ABOUT ===== */
+  #about{background:var(--white)}
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;margin-top:48px}
+  .about-text p{margin-bottom:18px;color:var(--ink-soft)}
+  .about-text .quote{font-family:"Noto Serif TC",serif;font-size:21px;color:var(--green-deep);border-left:3px solid var(--gold);padding-left:20px;margin:28px 0;line-height:1.7}
+  .about-img{position:relative}
+  .about-img img{border-radius:var(--radius);box-shadow:var(--shadow);height:460px;width:100%;object-fit:cover}
+  .about-img .badge{position:absolute;left:-22px;bottom:-22px;background:var(--green-deep);color:#fff;padding:22px 26px;border-radius:12px;box-shadow:var(--shadow)}
+  .about-img .badge b{font-family:"Noto Serif TC",serif;font-size:30px;display:block}
+  .about-img .badge span{font-size:13px;opacity:.85}
+  .values{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+  .value{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:.3s}
+  .value:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+  .value .ic{font-size:30px;margin-bottom:14px}
+  .value h3{font-size:19px;margin-bottom:8px}
+  .value p{font-size:14.5px;color:var(--ink-soft)}
+
+  /* ===== SERVICES / PRICING ===== */
+  #plans{background:var(--bg-soft)}
+  .plans-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:50px}
+  .plan{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 22px;display:flex;flex-direction:column;transition:.3s;position:relative;overflow:hidden}
+  .plan:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .plan.feature{border-color:var(--gold);box-shadow:var(--shadow)}
+  .plan.feature::before{content:"推薦";position:absolute;top:14px;right:-30px;background:var(--gold);color:#fff;font-size:12px;padding:4px 36px;transform:rotate(45deg)}
+  .plan .ptype{font-size:13px;color:var(--gold-deep);letter-spacing:.15em}
+  .plan h3{font-size:20px;margin:6px 0 14px}
+  .plan .price{font-family:"Noto Serif TC",serif;font-size:34px;color:var(--green-deep);font-weight:700}
+  .plan .price small{font-size:15px;color:var(--ink-soft);font-weight:400}
+  .plan ul{list-style:none;margin:18px 0;font-size:14px;color:var(--ink-soft);flex:1}
+  .plan ul li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px}
+  .plan ul li::before{content:"✓";color:var(--gold)}
+  .plan .pbtn{text-align:center;background:var(--bg);border:1px solid var(--line);padding:10px;border-radius:30px;font-size:14px;transition:.3s}
+  .plan:hover .pbtn{background:var(--gold);color:#fff;border-color:var(--gold)}
+  .note{text-align:center;color:var(--ink-soft);font-size:13.5px;margin-top:26px;font-weight:300}
+
+  /* ===== RELIGIONS ===== */
+  #rites{background:var(--white)}
+  .rites-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+  .rite{text-align:center;padding:34px 16px;border-radius:var(--radius);background:var(--bg);border:1px solid var(--line);transition:.3s;cursor:default}
+  .rite:hover{background:var(--green-deep);color:#fff;transform:translateY(-6px)}
+  .rite .ic{font-size:34px;margin-bottom:12px}
+  .rite h3{font-size:18px;margin-bottom:6px}
+  .rite p{font-size:13px;color:var(--ink-soft);transition:.3s}
+  .rite:hover p{color:rgba(255,255,255,.8)}
+
+  /* ===== PAGODA + TOOL split ===== */
+  #more{background:var(--bg-soft)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:40px;box-shadow:0 10px 30px -22px rgba(0,0,0,.4)}
+  .card h3{font-size:23px;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .card p{color:var(--ink-soft);margin-bottom:14px;font-size:15px}
+  .pagoda-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .pagoda-list span{background:var(--bg);border:1px solid var(--line);padding:6px 14px;border-radius:30px;font-size:13px;color:var(--green-deep)}
+  /* calculator */
+  .calc label{font-size:14px;color:var(--ink-soft);display:block;margin-bottom:6px}
+  .calc input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:15px;font-family:inherit;background:var(--bg);margin-bottom:16px}
+  .calc input:focus{outline:0;border-color:var(--gold)}
+  .calc-out{background:var(--green-deep);color:#fff;border-radius:12px;padding:22px;margin-top:6px;display:none}
+  .calc-out.show{display:block}
+  .calc-out .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:15px}
+  .calc-out .row:last-child{border:0}
+  .calc-out b{font-family:"Noto Serif TC",serif;font-size:18px}
+  .calc small{color:var(--ink-soft);font-size:12.5px}
+
+  /* ===== CONTACT ===== */
+  #contact{background:var(--green-deep);color:#fff;padding:96px 0}
+  #contact .sec-tag{color:#d8c08a}
+  #contact .sec-tag::before{background:#d8c08a}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;margin-top:46px;align-items:stretch}
+  .contact-info .line{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .contact-info .ic{font-size:22px;flex:0 0 auto;width:30px}
+  .contact-info .line b{display:block;font-family:"Noto Serif TC",serif;font-size:17px;margin-bottom:2px}
+  .contact-info .line span{opacity:.82;font-size:14.5px}
+  .contact-info .line a{color:#f0e4c4}
+  .map-wrap{border-radius:var(--radius);overflow:hidden;min-height:340px;box-shadow:var(--shadow)}
+  .map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.2)}
+  .cc-247{margin-top:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:22px;text-align:center}
+  .cc-247 b{font-family:"Noto Serif TC",serif;font-size:28px;letter-spacing:.05em;display:block}
+  .cc-247 span{opacity:.8;font-size:14px}
+
+  /* ===== FOOTER ===== */
+  footer{background:#1c1813;color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:13.5px}
+  footer .fbrand{font-family:"Noto Serif TC",serif;color:#fff;font-size:16px;margin-bottom:8px}
+  footer a{color:#cbb277}
+
+  /* floating call btn (mobile) */
+  .float-call{position:fixed;right:18px;bottom:18px;z-index:90;background:var(--gold);color:#fff;width:58px;height:58px;border-radius:50%;display:none;place-items:center;font-size:24px;box-shadow:var(--shadow)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:980px){
+    .about-grid,.split,.contact-grid{grid-template-columns:1fr}
+    .plans-grid{grid-template-columns:repeat(2,1fr)}
+    .rites-grid{grid-template-columns:repeat(2,1fr)}
+    .values{grid-template-columns:1fr}
+    .hero{background-attachment:scroll}
+    .about-img .badge{left:auto;right:16px}
+  }
+  @media(max-width:680px){
+    .menu{position:fixed;inset:0 0 0 auto;width:74%;max-width:320px;background:var(--green-deep);
+      flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.4s;padding:40px}
+    .menu.open{transform:none}
+    .menu a{color:#fff;font-size:18px}
+    .burger{display:flex}
+    .nav-cta{background:var(--gold)}
+    .float-call{display:grid}
+    .plans-grid,.rites-grid{grid-template-columns:1fr}
+    .hero-phone{display:none}
+    .sec{padding:64px 0}
+    .card{padding:28px}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="hdr">
+  <nav class="nav">
+    <a href="#top" class="brand">
+      <span class="mark"><img src="assets/logo.png" alt="甪端 Logo"></span>
+      <span class="txt"><b>甪端精緻生命事業</b><span>LUDWAN LIFE SERVICE</span></span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#about">經營理念</a>
+      <a href="#plans">服務方案</a>
+      <a href="#rites">宗教禮儀</a>
+      <a href="#more">寶塔・工具</a>
+      <a href="#contact">聯絡我們</a>
+      <a href="tel:0225679292" class="nav-cta">☎ 02-2567-9292</a>
+    </div>
+    <button class="burger" id="burger" aria-label="選單"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow reveal">以同理 ・ 以尊重 ・ 以禮相待</div>
+    <h1 class="reveal">慎終追遠，<br>陪伴每一段莊嚴的告別</h1>
+    <p class="lead reveal">甪端精緻生命事業，以三十年禮儀經驗，提供從臨終關懷、治喪協調到圓滿後事的全程服務。讓家屬在悲傷之中，仍能感受到體貼與安心。</p>
+    <div class="hero-btns reveal">
+      <a href="#plans" class="btn btn-gold">查看服務方案</a>
+      <a href="#contact" class="btn btn-ghost">24小時諮詢專線</a>
+    </div>
+  </div>
+  <div class="hero-phone">
+    全年無休服務專線<b>02-2567-9292</b>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-tag reveal">經營理念</div>
+    <h2 class="reveal">您不可不看 — 我們對生命的態度</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>最近，安寧照顧基金會有一則「不聽、不說、不看」的安寧照顧廣告，不曉得您看過嗎？了解它的涵意嗎？</p>
+        <p>國人一向把「生病」、「死亡」視為禁忌，避而不談。如果「忌諱」能帶給您的家人「平安健康、延年益壽」，甪端的全體同仁一定幫著您一同「忌諱」、一起「不聽、不看、不言」。</p>
+        <p class="quote">遇到「避而不談」、「忌諱」的客戶，我們選擇尊重；面對需要協助的家屬，我們選擇全心陪伴。</p>
+        <p>我們相信，禮儀服務不只是流程的安排，更是對逝者的敬重與對生者的撫慰。每一個細節，都是我們對生命的承諾。</p>
+      </div>
+      <div class="about-img reveal">
+        <img src="assets/field.jpg" alt="安寧自然意象">
+        <div class="badge"><b>30+</b><span>年禮儀服務經驗</span></div>
+      </div>
+    </div>
+
+    <div class="values">
+      <div class="value reveal"><div class="ic">🕊️</div><h3>全程關懷</h3><p>從臨終關懷、接體安靈到火化奠禮，專人全程協助，家屬無須奔波操煩。</p></div>
+      <div class="value reveal"><div class="ic">🤝</div><h3>誠信透明</h3><p>方案內容、項目規格清楚列示，不浮報、不隱藏，讓每一分支出都安心。</p></div>
+      <div class="value reveal"><div class="ic">🪷</div><h3>尊重信仰</h3><p>佛教、道教、天主教、基督教、一貫道等各宗教禮儀，依其信仰圓滿辦理。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="sec" id="plans">
+  <div class="wrap">
+    <div class="sec-tag reveal">服務方案</div>
+    <h2 class="reveal">透明合宜的禮儀方案</h2>
+    <p class="sub reveal">依家屬需求與信仰，提供中式、西式火化禮儀方案。下列為主要方案參考價，實際內容可依需求客製調整。</p>
+    <div class="plans-grid">
+      <div class="plan reveal">
+        <div class="ptype">經濟型・西式</div>
+        <h3>西式火化</h3>
+        <div class="price">10<small> 萬起</small></div>
+        <ul><li>接體車與接體袋</li><li>十字往生被</li><li>壽衣・藝術相框</li><li>入殮火化儀式</li></ul>
+        <div class="pbtn">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">經濟型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">12<small> 萬起</small></div>
+        <ul><li>專業服務人員 2 名</li><li>安靈法事與用品</li><li>訃聞・相片製作</li><li>制式外牌佈置</li></ul>
+        <div class="pbtn">了解詳情</div>
+      </div>
+      <div class="plan feature reveal">
+        <div class="ptype">基礎型・西式</div>
+        <h3>西式火化</h3>
+        <div class="price">15<small> 萬起</small></div>
+        <ul><li>臨終關懷服務</li><li>壽衣・回禮毛巾</li><li>20吋彩色遺照含框</li><li>完整入殮儀式</li></ul>
+        <div class="pbtn">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">基礎型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">18<small> 萬起</small></div>
+        <ul><li>安靈法事與用品</li><li>訃聞 100 份</li><li>乙廳緞帶佈置</li><li>作七法事協助</li></ul>
+        <div class="pbtn">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">標準型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">25<small> 萬起</small></div>
+        <ul><li>完整作七法事</li><li>雲端／平版訃聞</li><li>18吋遺照含藝術框</li><li>頭七誦經三名</li></ul>
+        <div class="pbtn">了解詳情</div>
+      </div>
+    </div>
+    <p class="note reveal">＊ 以上方案內容與價格為參考範例，實際服務項目、規格與費用，歡迎來電由禮儀師為您詳細說明與規劃。</p>
+  </div>
+</section>
+
+<!-- RITES -->
+<section class="sec" id="rites">
+  <div class="wrap">
+    <div class="sec-tag reveal">宗教禮儀</div>
+    <h2 class="reveal">依循信仰，圓滿每一份心意</h2>
+    <p class="sub reveal">我們熟悉各宗教的喪葬儀軌與禁忌，協助家屬依逝者信仰，莊嚴、合禮地完成身後事。</p>
+    <div class="rites-grid">
+      <div class="rite reveal"><div class="ic">🪷</div><h3>佛教禮儀</h3><p>助念、誦經、作七法事，依佛門儀軌平和送行。</p></div>
+      <div class="rite reveal"><div class="ic">☯️</div><h3>道教禮儀</h3><p>臨終處理、入殮、靈堂佈置與超拔科儀。</p></div>
+      <div class="rite reveal"><div class="ic">✝️</div><h3>天主教禮儀</h3><p>病人傅油、追思彌撒，依信仰引領回歸天國。</p></div>
+      <div class="rite reveal"><div class="ic">⛪</div><h3>基督教禮儀</h3><p>安息禮拜、追思禮拜，以盼望與愛送別。</p></div>
+      <div class="rite reveal"><div class="ic">🙏</div><h3>一貫道禮儀</h3><p>依禮奉養、依禮安葬，誠敬追思盡孝心。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGODA + TOOL -->
+<section class="sec" id="more">
+  <div class="wrap">
+    <div class="sec-tag reveal">延伸服務</div>
+    <h2 class="reveal">寶塔顧問 ・ 百日試算</h2>
+    <div class="split">
+      <div class="card reveal">
+        <h3>🏯 寶塔・墓園顧問</h3>
+        <p>提供合法寶塔及墓園諮詢與帶看服務，依家屬需求與預算，協助挑選安心合宜的長眠之所。</p>
+        <div class="pagoda-list">
+          <span>三芝真龍殿</span><span>金寶山</span><span>福田妙國</span>
+          <span>基隆金寶塔</span><span>土城觀自在寶塔</span><span>金山祥雲觀</span>
+          <span>台北聖城</span><span>福山陵萬壽山</span><span>私立國榮公墓</span>
+        </div>
+        <p style="font-size:14px"><b>預約帶看專線：</b>(02)2567-9292　行動：0910-046-751　劉經理</p>
+        <a href="#contact" class="btn btn-gold" style="margin-top:8px">預約諮詢</a>
+      </div>
+
+      <div class="card calc reveal">
+        <h3>🗓️ 百日 / 對年 試算工具</h3>
+        <p>輸入往生日期，自動計算「頭七、百日、對年」等重要日程，協助家屬安排祭祀。</p>
+        <label for="ddate">往生日期</label>
+        <input type="date" id="ddate">
+        <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="calcDays()">開始計算</button>
+        <div class="calc-out" id="calcOut">
+          <div class="row"><span>頭七（第 7 日）</span><b id="d7">—</b></div>
+          <div class="row"><span>滿七 / 七七（第 49 日）</span><b id="d49">—</b></div>
+          <div class="row"><span>百日（第 100 日）</span><b id="d100">—</b></div>
+          <div class="row"><span>對年（滿一年）</span><b id="d365">—</b></div>
+        </div>
+        <small style="display:block;margin-top:12px">＊ 試算結果僅供參考，實際日程請依各宗教習俗與擇日為準。</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-tag reveal">聯絡我們</div>
+    <h2 class="reveal">全年無休，隨時為您服務</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="line"><span class="ic">📍</span><div><b>公司地址</b><span>台北市中山區農安街 206 之 1 號 1 樓</span></div></div>
+        <div class="line"><span class="ic">☎</span><div><b>服務專線</b><span><a href="tel:0225679292">02-2567-9292</a></span></div></div>
+        <div class="line"><span class="ic">📱</span><div><b>24H 行動電話</b><span><a href="tel:0910046751">0910-046-751</a>　劉經理</span></div></div>
+        <div class="line"><span class="ic">📠</span><div><b>傳真</b><span>02-2501-4400</span></div></div>
+        <div class="cc-247">
+          全年無休 ・ 24 小時諮詢
+          <b>02-2567-9292</b>
+          <span>悲傷時刻，讓專業陪您一起承擔</span>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=台北市中山區農安街206-1號&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fbrand">甪端精緻生命事業股份有限公司</div>
+  地址：台北市中山區農安街 206-1 號 1 樓 ｜ TEL：02-2567-9292 ｜ FAX：02-2501-4400<br>
+  Copyright © <span id="yr"></span> 甪端精緻生命事業股份有限公司. All Rights Reserved.
+</footer>
+
+<a href="tel:0225679292" class="float-call" aria-label="撥打電話">☎</a>
+
+<script>
+  // nav scroll state
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>60));
+  // burger
+  const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  // year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // 百日計算
+  function fmt(d){const w=['日','一','二','三','四','五','六'];return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}（週${w[d.getDay()]}）`;}
+  function calcDays(){
+    const v=document.getElementById('ddate').value;
+    if(!v){alert('請先選擇往生日期');return;}
+    const base=new Date(v+'T00:00:00');
+    const add=(n)=>{const d=new Date(base);d.setDate(d.getDate()+n-1);return d;};
+    document.getElementById('d7').textContent=fmt(add(7));
+    document.getElementById('d49').textContent=fmt(add(49));
+    document.getElementById('d100').textContent=fmt(add(100));
+    const y=new Date(base);y.setFullYear(y.getFullYear()+1);
+    document.getElementById('d365').textContent=fmt(y);
+    document.getElementById('calcOut').classList.add('show');
+  }
+</script>
+</body>
+</html>
