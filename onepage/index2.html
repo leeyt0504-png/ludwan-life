@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>甪端精緻生命事業股份有限公司 ｜ 殯葬禮儀服務</title>
+<meta name="description" content="甪端精緻生命事業股份有限公司，提供專業、誠摯、合宜的殯葬禮儀服務。涵蓋中西式火化、各宗教禮儀、寶塔顧問與全程協助，以同理與尊重陪伴家屬走過人生最後一程。" />
+<meta name="keywords" content="甪端,甪端精緻,甪端精緻生命事業,殯葬禮儀,生命禮儀,葬儀社,禮儀公司,生前契約,寶塔顧問,台北禮儀公司" />
+<meta property="og:title" content="甪端精緻生命事業股份有限公司｜殯葬禮儀服務" />
+<meta property="og:description" content="以同理與尊重，陪伴家屬走過人生最後一程。" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f5f0;
+    --bg-soft:#efece4;
+    --ink:#2c2a26;
+    --ink-soft:#5b574f;
+    --line:#ddd6c8;
+    --gold:#a8884e;
+    --gold-deep:#8a6d38;
+    --green:#46584a;
+    --green-deep:#33433a;
+    --white:#fffdf9;
+    --shadow:0 18px 50px -24px rgba(40,35,25,.45);
+    --radius:14px;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans TC",-apple-system,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{font-family:"Noto Serif TC",serif;font-weight:600;letter-spacing:.02em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{position:relative}
+
+  /* ===== NAV ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    transition:.35s ease;
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:var(--maxw);margin:0 auto;padding:16px 24px;
+    transition:.35s ease;
+  }
+  .brand{display:flex;align-items:center;gap:12px;color:var(--white)}
+  .brand .mark{width:55px;height:55px;border-radius:50%;background:transparent;
+    display:grid;place-items:center;flex:0 0 auto}
+  .brand .mark img{width:100%;height:100%;object-fit:contain}
+  .brand .txt b{font-family:"Noto Serif TC",serif;font-size:18px;font-weight:600;display:block;line-height:1.3}
+  .brand .txt span{font-size:11px;letter-spacing:.32em;opacity:.8}
+  .menu{display:flex;gap:30px;align-items:center}
+  .menu a{color:var(--white);font-size:15px;opacity:.9;position:relative;padding:4px 0}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold);transition:.3s}
+  .menu a:hover{opacity:1}
+  .menu a:hover::after{width:100%}
+  .nav-cta{background:var(--gold);color:#fff !important;padding:9px 20px;border-radius:30px;font-size:14px;opacity:1 !important}
+  .nav-cta::after{display:none}
+  .nav-cta:hover{background:var(--gold-deep)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px}
+  .burger span{width:26px;height:2px;background:var(--white);transition:.3s}
+
+  header.scrolled{background:rgba(247,245,240,.96);backdrop-filter:blur(10px);box-shadow:0 2px 20px -10px rgba(0,0,0,.3)}
+  header.scrolled .nav{padding-top:10px;padding-bottom:10px}
+  header.scrolled .brand{color:var(--ink)}
+  header.scrolled .menu a{color:var(--ink-soft)}
+  header.scrolled .burger span{background:var(--ink)}
+
+  /* ===== HERO ===== */
+  .hero{
+    min-height:100vh;display:flex;align-items:center;
+    background:linear-gradient(rgba(28,34,29,.62),rgba(28,34,29,.5)),url("assets/lake.jpg") center/cover fixed;
+    color:var(--white);position:relative;
+  }
+  .hero .wrap{padding-top:120px;padding-bottom:80px}
+  .hero .eyebrow{letter-spacing:.45em;font-size:13px;opacity:.85;margin-bottom:22px}
+  .hero h1{font-size:clamp(32px,5.4vw,60px);line-height:1.35;font-weight:700;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+  .hero p.lead{font-size:clamp(16px,2vw,20px);max-width:620px;margin:26px 0 38px;font-weight:300;opacity:.95}
+  .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:32px;font-size:16px;font-weight:500;transition:.3s;cursor:pointer;border:0}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:var(--gold-deep);transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(4px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.22)}
+  .hero-phone{position:absolute;right:24px;bottom:30px;text-align:right;font-size:14px;opacity:.85}
+  .hero-phone b{font-family:"Noto Serif TC",serif;font-size:22px;display:block;letter-spacing:.05em}
+
+  /* ===== SECTION HEADINGS ===== */
+  .sec{padding:96px 0}
+  .sec-tag{color:var(--gold-deep);letter-spacing:.3em;font-size:13px;font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+  .sec-tag::before{content:"";width:34px;height:1px;background:var(--gold)}
+  .sec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.4;margin-bottom:8px}
+  .sec .sub{color:var(--ink-soft);max-width:680px;margin-top:14px;font-weight:300}
+
+  /* ===== ABOUT ===== */
+  #about{background:var(--white)}
+  .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;margin-top:48px}
+  .about-text p{margin-bottom:18px;color:var(--ink-soft)}
+  .about-text .quote{font-family:"Noto Serif TC",serif;font-size:21px;color:var(--green-deep);border-left:3px solid var(--gold);padding-left:20px;margin:28px 0;line-height:1.7}
+  .about-img{position:relative}
+  .about-img img{border-radius:var(--radius);box-shadow:var(--shadow);height:460px;width:100%;object-fit:cover}
+  .about-img .badge{position:absolute;left:-22px;bottom:-22px;background:var(--green-deep);color:#fff;padding:22px 26px;border-radius:12px;box-shadow:var(--shadow)}
+  .about-img .badge b{font-family:"Noto Serif TC",serif;font-size:30px;display:block}
+  .about-img .badge span{font-size:13px;opacity:.85}
+  .values{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+  .value{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:.3s}
+  .value:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+  .value .ic{font-size:30px;margin-bottom:14px}
+  .value h3{font-size:19px;margin-bottom:8px}
+  .value p{font-size:14.5px;color:var(--ink-soft)}
+
+  /* ===== SERVICES / PRICING ===== */
+  #plans{background:var(--bg-soft)}
+  .plans-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:50px}
+  .plan{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 22px;display:flex;flex-direction:column;transition:.3s;position:relative;overflow:hidden}
+  .plan:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .plan.feature{border-color:var(--gold);box-shadow:var(--shadow)}
+  .plan.feature::before{content:"推薦";position:absolute;top:14px;right:-30px;background:var(--gold);color:#fff;font-size:12px;padding:4px 36px;transform:rotate(45deg)}
+  .plan .ptype{font-size:13px;color:var(--gold-deep);letter-spacing:.15em}
+  .plan h3{font-size:20px;margin:6px 0 14px}
+  .plan .price{font-family:"Noto Serif TC",serif;font-size:34px;color:var(--green-deep);font-weight:700}
+  .plan .price small{font-size:15px;color:var(--ink-soft);font-weight:400}
+  .plan ul{list-style:none;margin:18px 0;font-size:14px;color:var(--ink-soft);flex:1}
+  .plan ul li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px}
+  .plan ul li::before{content:"✓";color:var(--gold)}
+  .plan .pbtn{text-align:center;background:var(--bg);border:1px solid var(--line);padding:10px;border-radius:30px;font-size:14px;transition:.3s}
+  .plan:hover .pbtn{background:var(--gold);color:#fff;border-color:var(--gold)}
+  .note{text-align:center;color:var(--ink-soft);font-size:13.5px;margin-top:26px;font-weight:300}
+
+  /* ===== RELIGIONS ===== */
+  #rites{background:var(--white)}
+  .rites-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+  .rite{text-align:center;padding:34px 16px;border-radius:var(--radius);background:var(--bg);border:1px solid var(--line);transition:.3s;cursor:default}
+  .rite:hover{background:var(--green-deep);color:#fff;transform:translateY(-6px)}
+  .rite .ic{font-size:34px;margin-bottom:12px}
+  .rite h3{font-size:18px;margin-bottom:6px}
+  .rite p{font-size:13px;color:var(--ink-soft);transition:.3s}
+  .rite:hover p{color:rgba(255,255,255,.8)}
+  .rite{cursor:pointer}
+  .more-link{display:inline-block;margin-top:10px;font-size:13px;color:var(--gold-deep);font-weight:500;transition:.3s}
+  .rite:hover .more-link{color:#f0e4c4}
+
+  /* ===== MODAL ===== */
+  .modal{position:fixed;inset:0;z-index:200;background:rgba(20,16,10,.6);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;padding:24px}
+  .modal.open{display:flex}
+  .modal-box{background:var(--white);max-width:760px;width:100%;max-height:86vh;border-radius:var(--radius);
+    padding:40px 42px;position:relative;overflow-y:auto;box-shadow:var(--shadow);animation:pop .3s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:none}}
+  .modal-x{position:absolute;top:16px;right:18px;background:var(--bg);border:1px solid var(--line);
+    width:38px;height:38px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer;color:var(--ink-soft);transition:.3s}
+  .modal-x:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+  .modal-box h3{font-size:26px;color:var(--green-deep);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--gold)}
+  .modal-body h4{font-family:"Noto Serif TC",serif;color:var(--gold-deep);font-size:17px;margin:22px 0 8px}
+  .modal-body p{color:var(--ink-soft);font-size:15px;margin-bottom:8px}
+  .modal-body ol,.modal-body ul{margin:6px 0 12px 20px;color:var(--ink-soft);font-size:14.5px}
+  .modal-body li{margin-bottom:5px}
+  /* plan detail table */
+  .ptable{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  .ptable th{background:var(--green-deep);color:#fff;padding:9px 10px;text-align:left;font-weight:500;font-size:13.5px}
+  .ptable td{padding:8px 10px;border-bottom:1px solid var(--line);color:var(--ink-soft);vertical-align:top}
+  .ptable tr:nth-child(even) td{background:var(--bg)}
+  .ptable .sec-row td{background:var(--green) !important;color:#fff;font-family:"Noto Serif TC",serif;font-weight:600;font-size:14px;letter-spacing:.08em;padding:7px 12px}
+  .ptable .qty{text-align:center;white-space:nowrap}
+  .plan-price-tag{display:inline-block;background:var(--gold);color:#fff;padding:4px 14px;border-radius:30px;font-size:15px;margin-left:10px;vertical-align:middle}
+  .modal-note{margin-top:16px;font-size:13px;color:var(--ink-soft);background:var(--bg);border-left:3px solid var(--gold);padding:12px 14px;border-radius:0 8px 8px 0}
+
+  /* ===== PAGODA + TOOL split ===== */
+  #more{background:var(--bg-soft)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:40px;box-shadow:0 10px 30px -22px rgba(0,0,0,.4)}
+  .card h3{font-size:23px;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .card p{color:var(--ink-soft);margin-bottom:14px;font-size:15px}
+  .pagoda-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .pagoda-list span{background:var(--bg);border:1px solid var(--line);padding:6px 14px;border-radius:30px;font-size:13px;color:var(--green-deep)}
+  /* calculator */
+  .calc label{font-size:14px;color:var(--ink-soft);display:block;margin-bottom:6px}
+  .calc input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:15px;font-family:inherit;background:var(--bg);margin-bottom:16px}
+  .calc input:focus{outline:0;border-color:var(--gold)}
+  .calc-out{background:var(--green-deep);color:#fff;border-radius:12px;padding:22px;margin-top:6px;display:none}
+  .calc-out.show{display:block}
+  .calc-out .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:15px}
+  .calc-out .row:last-child{border:0}
+  .calc-out b{font-family:"Noto Serif TC",serif;font-size:18px}
+  .calc small{color:var(--ink-soft);font-size:12.5px}
+
+  /* ===== HONORS ===== */
+  #honors{background:var(--white)}
+  .honor-card{display:flex;align-items:stretch;gap:0;margin:44px 0 30px;
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow)}
+  .honor-card .hc-name{flex:1 1 auto;display:flex;align-items:center;justify-content:center;padding:30px 34px}
+  .honor-card .hc-name img{width:100%;max-width:560px;height:auto;border-radius:8px}
+  .honor-card .hc-qr{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:28px 34px;background:var(--white);border-left:1px solid var(--line)}
+  .honor-card .hc-qr img{width:160px;height:160px;border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 20px -12px rgba(0,0,0,.4)}
+  .honor-card .hc-qr-txt b{display:block;font-family:"Noto Serif TC",serif;color:var(--green-deep);font-size:16px;margin-top:14px}
+  .honor-card .hc-qr-txt span{display:block;color:var(--ink-soft);font-size:13px;margin-top:4px}
+  .honor-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .honor-item{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);
+    border-left:4px solid var(--gold);border-radius:10px;padding:16px 18px;transition:.3s}
+  .honor-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold)}
+  .honor-item .hic{font-size:22px;flex:0 0 auto;line-height:1.5}
+  .honor-item p{color:var(--ink);font-size:15px;font-weight:500;line-height:1.55}
+  @media(max-width:880px){
+    .honor-card{flex-direction:column}
+    .honor-card .hc-qr{border-left:0;border-top:1px solid var(--line)}
+    .honor-card .hc-name img{max-width:100%}
+    .honor-list{grid-template-columns:1fr}
+  }
+
+  /* ===== CONTACT ===== */
+  #contact{background:var(--green-deep);color:#fff;padding:96px 0}
+  #contact .sec-tag{color:#d8c08a}
+  #contact .sec-tag::before{background:#d8c08a}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;margin-top:46px;align-items:stretch}
+  .contact-info .line{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .contact-info .ic{font-size:22px;flex:0 0 auto;width:30px}
+  .contact-info .line b{display:block;font-family:"Noto Serif TC",serif;font-size:17px;margin-bottom:2px}
+  .contact-info .line span{opacity:.82;font-size:14.5px}
+  .contact-info .line a{color:#f0e4c4}
+  .map-wrap{border-radius:var(--radius);overflow:hidden;min-height:340px;box-shadow:var(--shadow)}
+  .map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.2)}
+  .cc-247{margin-top:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:22px;text-align:center}
+  .cc-247 b{font-family:"Noto Serif TC",serif;font-size:28px;letter-spacing:.05em;display:block}
+  .cc-247 span{opacity:.8;font-size:14px}
+
+  /* ===== FOOTER ===== */
+  footer{background:#1c1813;color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:13.5px}
+  footer .fbrand{font-family:"Noto Serif TC",serif;color:#fff;font-size:16px;margin-bottom:8px}
+  footer a{color:#cbb277}
+
+  /* floating call btn (mobile) */
+  .float-call{position:fixed;right:18px;bottom:18px;z-index:90;background:var(--gold);color:#fff;width:58px;height:58px;border-radius:50%;display:none;place-items:center;font-size:24px;box-shadow:var(--shadow)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:980px){
+    .about-grid,.split,.contact-grid{grid-template-columns:1fr}
+    .plans-grid{grid-template-columns:repeat(2,1fr)}
+    .rites-grid{grid-template-columns:repeat(2,1fr)}
+    .values{grid-template-columns:1fr}
+    .hero{background-attachment:scroll}
+    .about-img .badge{left:auto;right:16px}
+  }
+  @media(max-width:680px){
+    .menu{position:fixed;inset:0 0 0 auto;width:74%;max-width:320px;background:var(--green-deep);
+      flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.4s;padding:40px}
+    .menu.open{transform:none}
+    .menu a{color:#fff;font-size:18px}
+    .burger{display:flex}
+    .nav-cta{background:var(--gold)}
+    .float-call{display:grid}
+    .plans-grid,.rites-grid{grid-template-columns:1fr}
+    .hero-phone{display:none}
+    .sec{padding:64px 0}
+    .card{padding:28px}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="hdr">
+  <nav class="nav">
+    <a href="#top" class="brand">
+      <span class="mark"><img src="assets/logo.png" alt="甪端 Logo"></span>
+      <span class="txt"><b>甪端精緻生命事業</b><span>LUDWAN LIFE SERVICE</span></span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#about">經營理念</a>
+      <a href="#plans">服務方案</a>
+      <a href="#rites">宗教禮儀</a>
+      <a href="#more">寶塔・工具</a>
+      <a href="#honors">榮譽認證</a>
+      <a href="#contact">聯絡我們</a>
+      <a href="tel:0225679292" class="nav-cta">☎ 02-2567-9292</a>
+    </div>
+    <button class="burger" id="burger" aria-label="選單"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow reveal">以同理 ・ 以尊重 ・ 以禮相待</div>
+    <h1 class="reveal">慎終追遠，<br>陪伴每一段莊嚴的告別</h1>
+    <p class="lead reveal">甪端精緻生命事業，以三十年禮儀經驗，提供從臨終關懷、治喪協調到圓滿後事的全程服務。讓家屬在悲傷之中，仍能感受到體貼與安心。</p>
+    <div class="hero-btns reveal">
+      <a href="#plans" class="btn btn-gold">查看服務方案</a>
+      <a href="#contact" class="btn btn-ghost">24小時諮詢專線</a>
+    </div>
+  </div>
+  <div class="hero-phone">
+    全年無休服務專線<b>02-2567-9292</b>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-tag reveal">經營理念</div>
+    <h2 class="reveal">您不可不看 — 我們對生命的態度</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>最近，安寧照顧基金會有一則「不聽、不說、不看」的安寧照顧廣告，不曉得您看過嗎？了解它的涵意嗎？</p>
+        <p>國人一向把「生病」、「死亡」視為禁忌，避而不談。如果「忌諱」能帶給您的家人「平安健康、延年益壽」，甪端的全體同仁一定幫著您一同「忌諱」、一起「不聽、不看、不言」。</p>
+        <p class="quote">遇到「避而不談」、「忌諱」的客戶，我們選擇尊重；面對需要協助的家屬，我們選擇全心陪伴。</p>
+        <p>我們相信，禮儀服務不只是流程的安排，更是對逝者的敬重與對生者的撫慰。每一個細節，都是我們對生命的承諾。</p>
+      </div>
+      <div class="about-img reveal">
+        <img src="assets/field.jpg" alt="安寧自然意象">
+        <div class="badge"><b>30+</b><span>年禮儀服務經驗</span></div>
+      </div>
+    </div>
+
+    <div class="values">
+      <div class="value reveal"><div class="ic">🕊️</div><h3>全程關懷</h3><p>從臨終關懷、接體安靈到火化奠禮，專人全程協助，家屬無須奔波操煩。</p></div>
+      <div class="value reveal"><div class="ic">🤝</div><h3>誠信透明</h3><p>方案內容、項目規格清楚列示，不浮報、不隱藏，讓每一分支出都安心。</p></div>
+      <div class="value reveal"><div class="ic">🪷</div><h3>尊重信仰</h3><p>佛教、道教、天主教、基督教、一貫道等各宗教禮儀，依其信仰圓滿辦理。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="sec" id="plans">
+  <div class="wrap">
+    <div class="sec-tag reveal">服務方案</div>
+    <h2 class="reveal">透明合宜的禮儀方案</h2>
+    <p class="sub reveal">依家屬需求與信仰，提供中式、西式火化禮儀方案。下列為主要方案參考價，實際內容可依需求客製調整。</p>
+    <div class="plans-grid">
+      <div class="plan reveal">
+        <div class="ptype">經濟型・西式</div>
+        <h3>西式火化</h3>
+        <div class="price">10<small> 萬起</small></div>
+        <ul><li>接體車與接體袋</li><li>十字往生被</li><li>壽衣・藝術相框</li><li>入殮火化儀式</li></ul>
+        <div class="pbtn" onclick="openPlan('eco_west')">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">經濟型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">12<small> 萬起</small></div>
+        <ul><li>專業服務人員 2 名</li><li>安靈法事與用品</li><li>訃聞・相片製作</li><li>制式外牌佈置</li></ul>
+        <div class="pbtn" onclick="openPlan('eco_cn')">了解詳情</div>
+      </div>
+      <div class="plan feature reveal">
+        <div class="ptype">基礎型・西式</div>
+        <h3>西式火化</h3>
+        <div class="price">15<small> 萬起</small></div>
+        <ul><li>臨終關懷服務</li><li>壽衣・回禮毛巾</li><li>20吋彩色遺照含框</li><li>完整入殮儀式</li></ul>
+        <div class="pbtn" onclick="openPlan('basic_west')">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">基礎型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">18<small> 萬起</small></div>
+        <ul><li>安靈法事與用品</li><li>訃聞 100 份</li><li>乙廳緞帶佈置</li><li>作七法事協助</li></ul>
+        <div class="pbtn" onclick="openPlan('basic_cn')">了解詳情</div>
+      </div>
+      <div class="plan reveal">
+        <div class="ptype">標準型・中式</div>
+        <h3>中式火化</h3>
+        <div class="price">25<small> 萬起</small></div>
+        <ul><li>完整作七法事</li><li>雲端／平版訃聞</li><li>18吋遺照含藝術框</li><li>頭七誦經三名</li></ul>
+        <div class="pbtn" onclick="openPlan('std_cn')">了解詳情</div>
+      </div>
+    </div>
+    <p class="note reveal">＊ 以上方案內容與價格為參考範例，實際服務項目、規格與費用，歡迎來電由禮儀師為您詳細說明與規劃。</p>
+  </div>
+</section>
+
+<!-- RITES -->
+<section class="sec" id="rites">
+  <div class="wrap">
+    <div class="sec-tag reveal">宗教禮儀</div>
+    <h2 class="reveal">依循信仰，圓滿每一份心意</h2>
+    <p class="sub reveal">我們熟悉各宗教的喪葬儀軌與禁忌，協助家屬依逝者信仰，莊嚴、合禮地完成身後事。<b>點擊下方卡片，查看各宗教完整禮儀流程。</b></p>
+    <div class="rites-grid">
+      <div class="rite reveal" onclick="openRite('buddhism')"><div class="ic">🪷</div><h3>佛教禮儀</h3><p>助念、誦經、作七法事，依佛門儀軌平和送行。</p><span class="more-link">完整流程 →</span></div>
+      <div class="rite reveal" onclick="openRite('taoism')"><div class="ic">☯︎</div><h3>道教禮儀</h3><p>臨終處理、入殮、靈堂佈置與葬日儀節。</p><span class="more-link">完整流程 →</span></div>
+      <div class="rite reveal" onclick="openRite('catholic')"><div class="ic">✝️</div><h3>天主教禮儀</h3><p>病人傅油、殯葬彌撒，依信仰引領回歸天國。</p><span class="more-link">完整流程 →</span></div>
+      <div class="rite reveal" onclick="openRite('christian')"><div class="ic">⛪</div><h3>基督教禮儀</h3><p>追思禮拜、安葬禮，以盼望與愛送別。</p><span class="more-link">完整流程 →</span></div>
+      <div class="rite reveal" onclick="openRite('yiguandao')"><div class="ic">🙏</div><h3>一貫道禮儀</h3><p>依禮奉養、依禮安葬，誠敬追思盡孝心。</p><span class="more-link">完整流程 →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RITE MODAL -->
+<div class="modal" id="riteModal" onclick="if(event.target===this)closeRite()">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeRite()" aria-label="關閉">×</button>
+    <h3 id="riteTitle" class="serif"></h3>
+    <div class="modal-body" id="riteBody"></div>
+  </div>
+</div>
+
+
+<!-- PAGODA + TOOL -->
+<section class="sec" id="more">
+  <div class="wrap">
+    <div class="sec-tag reveal">延伸服務</div>
+    <h2 class="reveal">寶塔顧問 ・ 百日試算</h2>
+    <div class="split">
+      <div class="card reveal">
+        <h3>🏯 寶塔・墓園顧問</h3>
+        <p>提供合法寶塔及墓園諮詢與帶看服務，依家屬需求與預算，協助挑選安心合宜的長眠之所。</p>
+        <div class="pagoda-list">
+          <span>三芝真龍殿</span><span>金寶山</span><span>福田妙國</span>
+          <span>金寶塔</span><span>觀自在寶塔</span><span>金山祥雲觀</span><span>北海福座</span><span>關西天陵藝術陵園</span>
+          <span>台北聖城</span><span>基福山</span><span>寶華山</span><span>永念庭</span>
+
+        </div>
+        <p style="font-size:14px"><b>預約帶看專線：</b>(02)2567-9292　行動：0910-046-751　劉經理</p>
+        <a href="#contact" class="btn btn-gold" style="width:100%;justify-content:center">預約諮詢</a>
+      </div>
+
+      <div class="card calc reveal">
+        <h3>🗓️ 百日 / 對年 試算工具</h3>
+        <p>輸入往生日期，自動計算「頭七、百日」等重要日程，協助家屬安排祭祀。</p>
+        <label for="ddate">往生日期</label>
+        <input type="date" id="ddate">
+        <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="calcDays()">開始計算</button>
+        <div class="calc-out" id="calcOut">
+          <div class="row"><span>頭七（第 7 日）</span><b id="d7">—</b></div>
+          <div class="row"><span>百日（第 100 日）</span><b id="d100">—</b></div>
+        </div>
+        <small style="display:block;margin-top:12px">＊ 試算結果僅供參考，實際日程請依各宗教習俗與擇日為準。</small>
+         <div class="card-body p-0">
+         <div>
+         <hr>
+         </div>
+                <h3>🗓️ 萬年曆與擇日查詢</h3>
+                  <p class="text-muted card-text mb-4">提供農民曆、每日吉凶、時令節氣及傳統擇日查詢，方便您與家族長輩挑選合適的治喪、出殯與晉塔吉日。</p>
+                  <a href="https://www.goodaytw.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="width:100%;justify-content:center">線上查詢</a>
+         </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- HONORS -->
+<section class="sec" id="honors">
+  <div class="wrap">
+    <div class="sec-tag reveal">榮譽認證</div>
+    <h2 class="reveal">獲獎肯定 ・ 值得信賴</h2>
+    <p class="sub reveal">多年來秉持誠信與專業，獲政府機關評鑑肯定，並承接公立機構喪葬服務。歡迎加入官方 LINE，由禮儀師為您即時諮詢。</p>
+    <div class="honor-card reveal">
+      <div class="hc-name">
+        <img src="assets/honor.jpg" alt="甪端精緻生命事業 — 劉世雄禮儀師">
+      </div>
+      <div class="hc-qr">
+        <img src="assets/line-qr.jpg" alt="官方 LINE 加好友 QRcode">
+        <div class="hc-qr-txt">
+          <b>加入官方 LINE</b>
+          <span>掃描 QRcode 即時諮詢</span>
+        </div>
+      </div>
+    </div>
+    <div class="honor-list reveal">
+      <div class="honor-item"><span class="hic">🏆</span><p>110~112 年度殯葬服務業評鑑優良業者</p></div>
+      <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓遷葬查估優良業者</p></div>
+      <div class="honor-item"><span class="hic">🏛️</span><p>107~112 年臺北市浩然敬老院院民喪葬服務業者</p></div>
+      <div class="honor-item"><span class="hic">🏆</span><p>99~114 年度殯葬服務業評鑑優良業者</p></div>
+      <div class="honor-item"><span class="hic">🏛️</span><p>107~115 年臺北市立浩然敬老院院民喪葬服務業者</p></div>
+      <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓查估遷葬優良業者</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-tag reveal">聯絡我們</div>
+    <h2 class="reveal">全年無休，隨時為您服務</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="line"><span class="ic">📍</span><div><b>公司地址</b><span>台北市中山區農安街 206 之 1 號 1 樓</span></div></div>
+        <div class="line"><span class="ic">☎</span><div><b>服務專線</b><span><a href="tel:0225679292">02-2567-9292</a></span></div></div>
+        <div class="line"><span class="ic">📱</span><div><b>24H 行動電話</b><span><a href="tel:0910046751">0910-046-751</a>　劉經理</span></div></div>
+        <div class="line"><span class="ic">📠</span><div><b>傳真</b><span>02-2501-4400</span></div></div>
+        <div class="cc-247">
+          全年無休 ・ 24 小時諮詢
+          <b>02-2567-9292</b>
+          <span>悲傷時刻，讓專業陪您一起承擔</span>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=台北市中山區農安街206-1號&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fbrand">甪端精緻生命事業股份有限公司</div>
+  地址：台北市中山區農安街 206-1 號 1 樓 ｜ TEL：02-2567-9292 ｜ FAX：02-2501-4400<br>
+  Copyright © <span id="yr"></span> 甪端精緻生命事業股份有限公司. All Rights Reserved.
+</footer>
+
+<a href="tel:0225679292" class="float-call" aria-label="撥打電話">☎</a>
+
+<script>
+  // nav scroll state
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>60));
+  // burger
+  const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  // year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // 百日計算
+  function fmt(d){const w=['日','一','二','三','四','五','六'];return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}（週${w[d.getDay()]}）`;}
+  function calcDays(){
+    const v=document.getElementById('ddate').value;
+    if(!v){alert('請先選擇往生日期');return;}
+    const base=new Date(v+'T00:00:00');
+    const add=(n)=>{const d=new Date(base);d.setDate(d.getDate()+n-1);return d;};
+    document.getElementById('d7').textContent=fmt(add(7));
+    document.getElementById('d100').textContent=fmt(add(100));
+    const y=new Date(base);y.setFullYear(y.getFullYear()+1);
+    document.getElementById('calcOut').classList.add('show');
+  }
+
+  // ===== 宗教禮儀 内容 =====
+  const RITES={
+    buddhism:{title:'🪷 佛教禮儀',html:`
+      <h4>助念</h4>
+      <p>時間：八小時。人員：應分成數班，每班兩人以上，輪班助念。法器：木魚、引磬（僅木魚亦可），法器聲要平和，忌諱尖銳或大聲。</p>
+      <p>助念聲音須高低適宜、快慢適中，稱念亡者常念之佛號（若無則以四字佛號為宜），並勸導亡者放下一切、一起念佛。眷屬切勿對亡者說情愛話或臨床揮淚，以免擾亂亡者正念。</p>
+      <h4>入殮</h4>
+      <p>時間：亡者死後十二至二十四小時入殮。人員：法師 3 至 5 人。</p>
+      <ol><li>蓮池讚（時間短可省略）</li><li>佛說阿彌陀經（時間短可改心經）</li><li>讚佛偈（阿彌陀佛身金色）</li><li>念佛（直至入棺、棺蓋封好才收佛號）</li><li>回向</li></ol>
+      <p>＊ 壽衣不一定要新的，只要亡者生前喜歡即可。入殮後安放靈位並拜飯，鮮花水果可天天或數天更換（水果以四樣為宜）。</p>
+      <h4>七七佛事</h4>
+      <p>人死之日為第一天，往後每七天為一旬，至七旬（七七）共四十九天；今亦有縮短為二十四天者。佛事內容含地藏經、金剛經、三昧水懺、藥師寶懺、梁皇寶懺、三時繫念、瑜伽燄口等。</p>
+      <h4>告別式・起靈・火化</h4>
+      <p>於家祭後、公祭前由法師誦經（蓮池讚、西方接引、心經、往生咒、讚佛偈、念佛、開示、回向）。公祭後起靈、引導靈柩至靈車，續行火化程序；約兩小時後收骨灰。</p>
+      <h4>晉塔安骨灰・對年・合爐</h4>
+      <p>晉塔誦清涼地菩薩、西方接引、心經往生咒、三皈依與回向。對年於祭日前一天誦超薦經典。合爐多於往生後三年（或對年後選一節日）舉行，將亡者名字寫入祖先牌位、抓香灰入祖先香爐、焚化牌位，並誦經回向。</p>`},
+    taoism:{title:'☯︎ 道教禮儀',html:`
+      <h4>臨終處理</h4>
+      <ol><li>沐浴、更衣：對往生者之尊重</li><li>遮神：喪喜有別</li><li>拼廳：落葉歸根</li><li>舉哀：孝道教育之表現</li><li>門制：對外告白、表明逝者身分</li><li>置腳尾物、燒腳尾紙</li><li>持念往生咒，以仗道力超拔</li></ol>
+      <h4>入殮與靈堂佈置</h4>
+      <p>入殮（亦稱「入木」）應設靈堂及供品。靈堂含靈旛、魂帛（神主）、感神旛、魂身、金童玉女、安奉七星元辰燈。並早晚拜飯以表孝道。</p>
+      <h4>做旬（一七至三年）</h4>
+      <p>俗稱做旬，教儀稱「屆丁旬，開通冥路」，分別對應冥府十宮真君與冥王：一七至七七、百日、周歲、三年，各有所屬。</p>
+      <h4>初終至大殮儀節</h4>
+      <p>儀節流程包含隨侍在側、舉哀、帷堂、闔扉、子孫變服、陳設腳尾物、示喪、守舖、擇日、報喪、買棺、成立治喪委員會、宗教法事、哭路頭、奔喪等；大殮含成服、乞水、沐浴、穿壽衣、辭生、封釘、做七、守靈、訃聞撰印與寄送。</p>
+      <h4>出殯與葬日儀節</h4>
+      <p>出殯前依規模分配總幹事、會計、接待、總務、奠禮、行列等組別，並佈置奠禮堂、軸幛與輓聯。葬日儀節：家奠→轉柩→公奠→安釘→啟靈→葬列→放栓→安葬→辭客→祀后土→點主→祭墓→返主→安靈。奠禮應莊嚴肅穆，依《國民禮儀範例》規定進行。</p>`},
+    catholic:{title:'✝️ 天主教禮儀',html:`
+      <p>一切聖事性的禮儀以天主子女的最後逾越為目標，通過死亡引領人進入天國的生命，滿全「我期待死人的復活，及來世的生命」之信仰。</p>
+      <h4>病人傅油禮</h4>
+      <p>臨終關懷中的靈性關懷；病人傅油在救恩史中的基礎、領受者與效果。</p>
+      <h4>入殮禮</h4>
+      <p>相信死亡並非終結，而是進入永生的門徑。含佈置靈堂、守靈（守夜禮）、入殮禮。</p>
+      <h4>殯葬彌撒</h4>
+      <p>因永生的許諾而獲安慰。含堂詠、懺悔詞、求主垂憐、集禱經、聖道禮儀、聖祭禮儀、領聖體禮、領聖體後經、禮成祝福禮。</p>
+      <h4>告別禮・家祭・公祭</h4>
+      <p>祈求復活、灑聖水、獻香、為亡者祈禱，後舉行家祭與公祭儀式（上香、獻花果酒、讀祭文、行禮、奏樂）。</p>
+      <h4>啟靈・安葬・火葬・安靈・圓墳</h4>
+      <p>啟靈禮以基督死而復活為信念；安葬禮將身體交還泥土、祝福墓穴、靈柩入土；火葬禮恭讀聖經、為亡者祈禱、灑聖水、行禮、點火；安靈禮安放靈位、上香、致候、灑聖水祝福；圓墳禮含聖歌、讀經、祈禱、上香、灑聖水、獻花、致敬。</p>`},
+    christian:{title:'⛪ 基督教禮儀',html:`
+      <h4>對生與死的認識</h4>
+      <p>人照神的形像受造，活著要有真理的仁義與聖潔、彼此相愛、犧牲捨己。死亡是塵土歸地、靈歸於賜靈的神，息了世上勞苦，復活成為不朽壞，享受天國永遠的家鄉。</p>
+      <h4>喪葬禮儀的意義</h4>
+      <p>基督教強調把握今生，喪禮是為活人而辦，又稱「追思禮拜」。基督教堅決反對自殺，鼓勵因復活的盼望而釋放怕死的捆綁。</p>
+      <h4>喪葬儀式</h4>
+      <p><b>在殯儀館：</b>遺體停於冰櫃保存，喪禮前一小時入殮、清洗化妝穿戴整齊，遺族隨侍禱告唱詩，蓋上透明壓克力板，禮畢瞻仰後完全封棺。<br>
+      <b>在家裡：</b>取得死亡證明後停屍客廳，遺族到齊後由傳道（牧師）主持入殮，唱詩禱告，程序與殯儀館相同。</p>
+      <h4>喪禮・出殯</h4>
+      <p>喪禮無特定日子（多在星期日），追思禮拜隆重而有禮節。出殯順序：教會會旗→「榮歸天家」橫旗→豎旗→樂隊→花車→靈車→遺族→親友。</p>
+      <h4>安葬禮</h4>
+      <p>火葬：傳道唱詩禱告後火化，骨灰安置納骨塔。土葬：墓地不看風水，但須乾淨幽雅，以示對故人尊重。</p>`},
+    yiguandao:{title:'🙏 一貫道禮儀',html:`
+      <h4>喪事須知</h4>
+      <p>「生，事之以禮；死，葬之以禮，祭之以禮。」父母在世依禮奉養，逝世依禮安葬，祭祀盡禮以誠敬追思。「歸空」即靈魂脫離軀殼；停止呼吸後屍體於半小時至一小時內最好不移動，使歸靈清淨自然歸返。</p>
+      <h4>治喪禮節及入殮須知</h4>
+      <ol><li>訃告至親好友報喪，得設治喪委員會</li><li>入殮禮時家族親友瞻仰遺容後蓋棺</li><li>分別穿喪服、佩喪標誌，設靈案、遺像或靈位，獻四果清茶誠心禱誦</li><li>封釘：出殯當天由族長或母舅「安釘」「點釘」</li><li>示喪：父亡書「嚴制」、母亡書「慈制」，左右鄰居貼紅布條以示吉利</li></ol>
+      <h4>治喪準備與告別式</h4>
+      <p>準備棺木、喪服、靈骨罐、遺像、式場佈置、中西樂隊、引導點傳師（法師）、司儀、鮮花鮮果素菜等。祭品以清香、鮮花、蔬果為宜，念經請法師或道親助念，減免陣隊以免流俗浪費。</p>
+      <h4>奠弔注意事項</h4>
+      <p>奠禮前司儀宣佈犯沖時刻年齡讓與祭者迴避；奠禮依訃聞時間進行，司儀儀容潔淨整齊、聲調清晰平穩。家祭禮遵循古禮「祭之以禮」，孝眷以無限哀思追念、報答親恩。</p>`}
+  };
+  const PLANS={
+    eco_west:{title:'經濟型 西式火化服務',price:'10 萬起',rows:[['接體','接體車','趟','1','限同一縣市'],['接體','接體袋','只','1',''],['接體','十字往生被','件','1',''],['治喪協調','壽衣','套','1','一般綢 制式'],['治喪協調','二折式訃聞','張','50','或電子訃聞或程序單擇一'],['治喪協調','彩色/黑白15吋','張','1',''],['治喪協調','藝術相框','只','1',''],['入殮儀式','火化棺木','具','1','綠能環保棺(打桶另計)'],['入殮儀式','棺車 棺被','組','1','租用'],['入殮儀式','十字天地被','套','1','一般綢 制式'],['入殮儀式','頭腳枕','組','1','一般綢 制式'],['入殮儀式','填棺用品','包','12','衛生紙'],['入殮儀式','放板工人','名','2',''],['入殮儀式','骨灰罐','只','1','黑花崗等級'],['入殮儀式','刻字按金','式','1',''],['入殮儀式','玉相/銅相','式','1',''],['入殮儀式','包巾','條','1',''],['禮廳佈置','制式外牌','式','1','丙廳(含)以下 緞帶或LED'],['禮廳佈置','藝術造型花台','式','1','15尺'],['禮廳佈置','布幔全包','式','1','丙廳(含)以下'],['禮廳佈置','相框花','式','1','15吋'],['禮廳佈置','鮮花十字架','式','1','4尺'],['禮廳佈置','迎賓地毯','式','1','丙廳(含)以下'],['禮廳佈置','燈光','組','1','丙廳(含)以下'],['奠禮','十字胸花','枚','30',''],['奠禮','黑孝服或白袍','件','10','租用'],['奠禮','扶棺','組','1',''],['奠禮','晉塔車輛','輛','1','']]},
+    eco_cn:{title:'經濟型 中式火化服務',price:'12 萬起',rows:[['接體','服務人員','名','2',''],['接體','接體車','趟','1','限同一縣市'],['接體','接體袋','只','1',''],['安靈','安靈法事','名','1','在家修居士'],['安靈','安靈用品','組','1','館內豎靈'],['安靈','二折式','張','50','制式紙本或電子訃聞'],['安靈','彩色/黑白15吋','張','1','含藝術框'],['佈置','制式外牌','組','1','丙廳緞帶或LED'],['佈置','禮堂布幔','式','1','丙廳(含)以下'],['佈置','鮮花花台','式','1','15尺'],['佈置','三樣花','式','1','丙廳(相框花、桌花、獻花圈)'],['佈置','燈光','組','1','丙廳(含)以下'],['佈置','地毯','式','1','丙廳(含)以下'],['入殮','放板工人','名','2',''],['入殮','棺木','具','1','綠能環保棺（打桶另計）'],['入殮','高級棺車、精緻棺被','組','1','租用'],['入殮','蓮花水被或天地被','套','1','一般綢'],['入殮','壽衣','套','1','一般綢 制式'],['入殮','庫錢','箱','3',''],['入殮','壽內','組','1',''],['入殮','入殮法事','名','1','在家修居士'],['奠禮','奠禮法事','名','1','在家修居士'],['奠禮','司儀','名','1','丙廳(含)以下'],['奠禮','禮生','名','2','丙廳(含)以下'],['奠禮','祭品','套','1','四果、12菜碗、酒(茶)'],['奠禮','孝服','件','10','租用'],['奠禮','禮簿、謝簿、簽名簿、筆','組','1',''],['奠禮','奠燭、香、捻香粉','組','1',''],['奠禮','胸花 貼紙','枚','30',''],['火化','骨灰罐','只','1','黑花崗等級'],['火化','玉相/銅相','式','1',''],['火化','刻字按金','式','1',''],['火化','包巾','條','1',''],['火化','扶棺人員','組','1',''],['火化','晉塔車','輛','1','限同一縣市(三小時內)'],['火化','紙錢','式','1','']]},
+    basic_west:{title:'基礎型 西式火化服務',price:'15 萬起',rows:[['接體','臨終關懷','名','1',''],['接體','接體車','趟','1','限同一縣市'],['接體','接體袋','只','1',''],['接體','十字往生被','件','1',''],['治喪協調','壽衣','套','1','一般綢 制式'],['治喪協調','回禮毛巾','條','50','80元等級'],['治喪協調','二折式','張','50','或電子訃聞或程序單擇一'],['治喪協調','彩色/黑白20吋','張','1','含藝術框'],['治喪協調','藝術相框','只','1',''],['入殮儀式','火化棺木','具','1','綠能環保棺(打桶另計)'],['入殮儀式','棺車 棺被','組','1','租用'],['入殮儀式','十字天地被','套','1','一般綢 制式'],['入殮儀式','頭腳枕','組','1','一般綢 制式'],['入殮儀式','填棺用品','包','18','衛生紙'],['入殮儀式','放板工人','名','2',''],['入殮儀式','骨灰罐','只','1','紅玉等級'],['入殮儀式','刻字按金','式','1',''],['入殮儀式','玉相/銅相','式','1',''],['入殮儀式','包巾','條','1',''],['禮廳佈置','制式外牌','式','1','乙廳(含)以下 緞帶或LED'],['禮廳佈置','藝術造型花台','式','1','18尺'],['禮廳佈置','布幔全包','式','1','乙廳(含)以下'],['禮廳佈置','相框花','式','1','燈片'],['禮廳佈置','鮮花十字架','式','3','4尺'],['禮廳佈置','收賻桌盆花','盆','1',''],['禮廳佈置','迎賓地毯','式','1','乙廳(含)以下'],['禮廳佈置','燈光','組','1','乙廳(含)以下'],['奠禮','電子琴 音響','組','1','租用'],['奠禮','十字胸花','枚','50',''],['奠禮','黑孝服或白袍','件','15','租用'],['奠禮','會葬花','朵','50',''],['奠禮','扶棺','組','1',''],['奠禮','晉塔車輛','輛','1','福斯 T6']]},
+    basic_cn:{title:'基礎型 中式火化服務',price:'18 萬起',rows:[['接體','服務人員','名','2',''],['接體','接體車','趟','1','限同一縣市'],['接體','接體袋','只','1',''],['安靈','安靈法事','名','1','在家修居士'],['安靈','安靈用品','組','1',''],['安靈','二折式','張','100','平版制式或電子訃聞'],['安靈','彩色/黑白18吋','張','1','含藝術框'],['佈置','制式外牌','組','1','乙廳緞帶或LED'],['佈置','禮堂布幔','式','1','乙廳(含)以下'],['佈置','鮮花花台','式','1','18尺'],['佈置','三樣花','式','1','乙廳(相框花、桌花、獻花圈)'],['佈置','燈光','組','1','乙廳(含)以下'],['佈置','地毯','式','1','乙廳(含)以下'],['入殮','放板工人','名','2',''],['入殮','棺木','具','1','國產環保棺（打桶另計費）'],['入殮','高級棺車、精緻棺被','組','1','租用'],['入殮','蓮花水被或天地被','套','1','一般綢'],['入殮','壽衣','套','1','一般綢 制式'],['入殮','庫錢','箱','3',''],['入殮','壽內','組','1',''],['入殮','入殮法事','名','1','在家修居士'],['奠禮','奠禮法事','名','3','誦經師姐'],['奠禮','司儀','名','1','乙廳(含)以下'],['奠禮','禮生','名','2','乙廳(含)以下'],['奠禮','樂隊','名','3',''],['奠禮','祭品','套','1','四果、12菜碗、酒(茶)'],['奠禮','孝服','件','15','租用'],['奠禮','禮簿、謝簿、簽名簿、筆','組','1',''],['奠禮','奠燭、香、捻香粉','組','1',''],['奠禮','胸花','朵','100',''],['火化','骨灰罐','只','1','紅玉等級'],['火化','玉相/銅相','式','1',''],['火化','刻字按金','式','1',''],['火化','包巾','條','1',''],['火化','扶棺人員','組','1',''],['火化','晉塔車','輛','1','福斯 T6 六人座'],['火化','紙錢','式','1','']]},
+    std_cn:{title:'標準型 中式火化服務',price:'25 萬起',rows:[['接體','服務人員','名','2',''],['接體','接體車','趟','1','限同一縣市'],['接體','接體袋','只','1',''],['安靈','安靈法事','名','1','在家修居士'],['安靈','安靈用品','組','1',''],['安靈','二折式','張','150','平版制式或雲端訃聞'],['安靈','彩色/黑白18吋','張','1','含藝術框'],['作七法事','頭七法事','名','3','誦經師姐'],['作七法事','頭七祭品','份','1','精緻六菜碗、四果、紙錢、香'],['作七法事','三七法事','名','3','誦經師姐'],['作七法事','三七祭品','份','1','精緻六菜碗、四果、紙錢、香'],['作七法事','五七法事','名','3','誦經師姐'],['作七法事','五七祭品','份','1','精緻六菜碗、四果、紙錢、香'],['作七法事','滿七法事','名','3','誦經師姐'],['作七法事','滿七祭品','份','1','精緻六菜碗、四果、紙錢、香'],['佈置','制式外牌','組','1','乙廳緞帶或LED'],['佈置','禮堂布幔','式','1','乙廳(含)以下'],['佈置','鮮花花台','式','1','18尺'],['佈置','三樣花','式','1','乙廳(相框花、桌花、獻花圈)'],['佈置','燈光','組','1','乙廳(含)以下'],['佈置','地毯','式','1','乙廳(含)以下'],['入殮','放板工人','名','2',''],['入殮','棺木','具','1','金如意火化棺（打桶另計費）'],['入殮','高級棺車、精緻棺被','組','1','租用'],['入殮','蓮花水被或天地被','套','1','一般綢'],['入殮','壽衣','套','1','一般綢 制式'],['入殮','庫錢','箱','3',''],['入殮','壽內','組','1',''],['入殮','入殮法事','名','1','在家修居士'],['奠禮','奠禮法事','名','3','誦經師姐'],['奠禮','司儀','名','1','乙廳(含)以下'],['奠禮','禮生','名','2','乙廳(含)以下'],['奠禮','樂隊','名','3',''],['奠禮','祭品','套','1','四果、12菜碗、酒(茶)'],['奠禮','孝服','件','20','租用'],['奠禮','禮簿、謝簿、簽名簿、筆','組','1',''],['奠禮','奠燭、香、捻香粉','組','1',''],['奠禮','胸花','朵','150',''],['奠禮','毛巾','條','100','80元等級'],['火化','骨灰罐','只','1','松香玉等級'],['火化','玉相/銅相','式','1',''],['火化','刻字按金','式','1',''],['火化','包巾','條','1',''],['火化','扶棺人員','組','1',''],['火化','晉塔車','輛','1','Alphard(阿爾發)六人座'],['火化','紙錢','式','1','']]},
+  };
+  function openPlan(k){
+    const p=PLANS[k];if(!p)return;
+    document.getElementById('riteTitle').innerHTML=p.title+'<span class="plan-price-tag">'+p.price+'</span>';
+    let html='<table class="ptable"><thead><tr><th>服務項目</th><th>單位</th><th class="qty">數量</th><th>規格說明</th></tr></thead><tbody>';
+    let lastSec=null;
+    p.rows.forEach(r=>{
+      if(r[0]!==lastSec){lastSec=r[0];html+='<tr class="sec-row"><td colspan="4">'+r[0]+'</td></tr>';}
+      html+='<tr><td>'+r[1]+'</td><td>'+(r[2]||'-')+'</td><td class="qty">'+(r[3]||'-')+'</td><td>'+(r[4]||'')+'</td></tr>';
+    });
+    html+='</tbody></table>';
+    html+='<div class="modal-note">＊ 以上為方案標準內容範例，殯儀館規費由家屬負擔，實際項目與費用得依需求客製調整。詳情歡迎來電 02-2567-9292 由禮儀師為您說明。</div>';
+    document.getElementById('riteBody').innerHTML=html;
+    document.getElementById('riteModal').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function openRite(k){
+    const r=RITES[k];if(!r)return;
+    document.getElementById('riteTitle').textContent=r.title;
+    document.getElementById('riteBody').innerHTML=r.html;
+    document.getElementById('riteModal').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeRite(){
+    document.getElementById('riteModal').classList.remove('open');
+    document.body.style.overflow='';
+  }
+  addEventListener('keydown',e=>{if(e.key==='Escape')closeRite();});
+</script>
+</body>
+</html>
