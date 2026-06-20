@@ -55,8 +55,8 @@
     transition:.35s ease;
   }
   .brand{display:flex;align-items:center;gap:12px;color:var(--white)}
-  .brand .mark{width:42px;height:42px;border-radius:50%;background:#15110c;
-    display:grid;place-items:center;padding:5px;flex:0 0 auto;border:1px solid rgba(255,255,255,.25)}
+  .brand .mark{width:55px;height:55px;border-radius:50%;background:transparent;
+    display:grid;place-items:center;flex:0 0 auto}
   .brand .mark img{width:100%;height:100%;object-fit:contain}
   .brand .txt b{font-family:"Noto Serif TC",serif;font-size:18px;font-weight:600;display:block;line-height:1.3}
   .brand .txt span{font-size:11px;letter-spacing:.32em;opacity:.8}
@@ -195,6 +195,26 @@
   .calc-out b{font-family:"Noto Serif TC",serif;font-size:18px}
   .calc small{color:var(--ink-soft);font-size:12.5px}
 
+  /* ===== HONORS ===== */
+  #honors{background:var(--white)}
+  .honor-banner{margin:44px 0 30px;text-align:center}
+  .honor-banner img{display:inline-block;width:auto;max-width:100%;max-height:150px;
+    border-radius:12px;box-shadow:var(--shadow);border:1px solid var(--line)}
+  .honor-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:34px;align-items:stretch}
+  .honor-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:center}
+  .honor-item{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);
+    border-left:4px solid var(--gold);border-radius:10px;padding:16px 18px;transition:.3s}
+  .honor-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold)}
+  .honor-item .hic{font-size:22px;flex:0 0 auto;line-height:1.5}
+  .honor-item p{color:var(--ink);font-size:15px;font-weight:500;line-height:1.55}
+  .honor-qr{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px}
+  .honor-qr img{width:100%;max-width:180px;margin:0 auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+  .honor-qr b{display:block;font-family:"Noto Serif TC",serif;color:var(--green-deep);font-size:17px;margin-top:16px}
+  .honor-qr span{display:block;color:var(--ink-soft);font-size:13px;margin-top:4px}
+  @media(max-width:980px){.honor-grid{grid-template-columns:1fr}}
+  @media(max-width:680px){.honor-list{grid-template-columns:1fr}.honor-banner img{max-height:none}}
+
   /* ===== CONTACT ===== */
   #contact{background:var(--green-deep);color:#fff;padding:96px 0}
   #contact .sec-tag{color:#d8c08a}
@@ -261,6 +281,7 @@
       <a href="#plans">服務方案</a>
       <a href="#rites">宗教禮儀</a>
       <a href="#more">寶塔・工具</a>
+      <a href="#honors">榮譽認證</a>
       <a href="#contact">聯絡我們</a>
       <a href="tel:0225679292" class="nav-cta">☎ 02-2567-9292</a>
     </div>
@@ -365,7 +386,7 @@
     <p class="sub reveal">我們熟悉各宗教的喪葬儀軌與禁忌，協助家屬依逝者信仰，莊嚴、合禮地完成身後事。<b>點擊下方卡片，查看各宗教完整禮儀流程。</b></p>
     <div class="rites-grid">
       <div class="rite reveal" onclick="openRite('buddhism')"><div class="ic">🪷</div><h3>佛教禮儀</h3><p>助念、誦經、作七法事，依佛門儀軌平和送行。</p><span class="more-link">完整流程 →</span></div>
-      <div class="rite reveal" onclick="openRite('taoism')"><div class="ic">☯️</div><h3>道教禮儀</h3><p>臨終處理、入殮、靈堂佈置與葬日儀節。</p><span class="more-link">完整流程 →</span></div>
+      <div class="rite reveal" onclick="openRite('taoism')"><div class="ic">☯︎</div><h3>道教禮儀</h3><p>臨終處理、入殮、靈堂佈置與葬日儀節。</p><span class="more-link">完整流程 →</span></div>
       <div class="rite reveal" onclick="openRite('catholic')"><div class="ic">✝️</div><h3>天主教禮儀</h3><p>病人傅油、殯葬彌撒，依信仰引領回歸天國。</p><span class="more-link">完整流程 →</span></div>
       <div class="rite reveal" onclick="openRite('christian')"><div class="ic">⛪</div><h3>基督教禮儀</h3><p>追思禮拜、安葬禮，以盼望與愛送別。</p><span class="more-link">完整流程 →</span></div>
       <div class="rite reveal" onclick="openRite('yiguandao')"><div class="ic">🙏</div><h3>一貫道禮儀</h3><p>依禮奉養、依禮安葬，誠敬追思盡孝心。</p><span class="more-link">完整流程 →</span></div>
@@ -394,24 +415,23 @@
         <p>提供合法寶塔及墓園諮詢與帶看服務，依家屬需求與預算，協助挑選安心合宜的長眠之所。</p>
         <div class="pagoda-list">
           <span>三芝真龍殿</span><span>金寶山</span><span>福田妙國</span>
-          <span>基隆金寶塔</span><span>土城觀自在寶塔</span><span>金山祥雲觀</span>
-          <span>台北聖城</span><span>福山陵萬壽山</span><span>私立國榮公墓</span>
+          <span>金寶塔</span><span>觀自在寶塔</span><span>金山祥雲觀</span><span>北海福座</span><span>關西天陵藝術陵園</span>
+          <span>台北聖城</span><span>基福山</span><span>寶華山</span><span>永念庭</span>
+
         </div>
         <p style="font-size:14px"><b>預約帶看專線：</b>(02)2567-9292　行動：0910-046-751　劉經理</p>
-        <a href="#contact" class="btn btn-gold" style="margin-top:8px">預約諮詢</a>
+        <a href="#contact" class="btn btn-gold" style="width:100%;justify-content:center">預約諮詢</a>
       </div>
 
       <div class="card calc reveal">
         <h3>🗓️ 百日 / 對年 試算工具</h3>
-        <p>輸入往生日期，自動計算「頭七、百日、對年」等重要日程，協助家屬安排祭祀。</p>
+        <p>輸入往生日期，自動計算「頭七、百日」等重要日程，協助家屬安排祭祀。</p>
         <label for="ddate">往生日期</label>
         <input type="date" id="ddate">
         <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="calcDays()">開始計算</button>
         <div class="calc-out" id="calcOut">
           <div class="row"><span>頭七（第 7 日）</span><b id="d7">—</b></div>
-          <div class="row"><span>滿七 / 七七（第 49 日）</span><b id="d49">—</b></div>
           <div class="row"><span>百日（第 100 日）</span><b id="d100">—</b></div>
-          <div class="row"><span>對年（滿一年）</span><b id="d365">—</b></div>
         </div>
         <small style="display:block;margin-top:12px">＊ 試算結果僅供參考，實際日程請依各宗教習俗與擇日為準。</small>
          <div class="card-body p-0">
@@ -420,10 +440,37 @@
          </div>
                 <h3>🗓️ 萬年曆與擇日查詢</h3>
                   <p class="text-muted card-text mb-4">提供農民曆、每日吉凶、時令節氣及傳統擇日查詢，方便您與家族長輩挑選合適的治喪、出殯與晉塔吉日。</p>
-                  <a href="https://www.goodaytw.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="margin-top:8px">線上查詢</a>
+                  <a href="https://www.goodaytw.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="width:100%;justify-content:center">線上查詢</a>
          </div>
       </div>
       
+    </div>
+  </div>
+</section>
+
+<!-- HONORS -->
+<section class="sec" id="honors">
+  <div class="wrap">
+    <div class="sec-tag reveal">榮譽認證</div>
+    <h2 class="reveal">獲獎肯定 ・ 值得信賴</h2>
+    <p class="sub reveal">多年來秉持誠信與專業，獲政府機關評鑑肯定，並承接公立機構喪葬服務。歡迎加入官方 LINE，由禮儀師為您即時諮詢。</p>
+    <div class="honor-banner reveal">
+      <img src="assets/honor.jpg" alt="甪端精緻生命事業 — 劉世雄禮儀師">
+    </div>
+    <div class="honor-grid">
+      <div class="honor-list reveal">
+        <div class="honor-item"><span class="hic">🏆</span><p>110~112 年度殯葬服務業評鑑優良業者</p></div>
+        <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓遷葬查估優良業者</p></div>
+        <div class="honor-item"><span class="hic">🏛️</span><p>107~112 年臺北市浩然敬老院院民喪葬服務業者</p></div>
+        <div class="honor-item"><span class="hic">🏆</span><p>99~114 年度殯葬服務業評鑑優良業者</p></div>
+        <div class="honor-item"><span class="hic">🏛️</span><p>107~115 年臺北市立浩然敬老院院民喪葬服務業者</p></div>
+        <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓查估遷葬優良業者</p></div>
+      </div>
+      <div class="honor-qr reveal">
+        <img src="assets/line-qr.jpg" alt="官方 LINE 加好友 QRcode">
+        <b>加入官方 LINE</b>
+        <span>掃描 QRcode 即時諮詢</span>
+      </div>
     </div>
   </div>
 </section>
@@ -482,10 +529,8 @@
     const base=new Date(v+'T00:00:00');
     const add=(n)=>{const d=new Date(base);d.setDate(d.getDate()+n-1);return d;};
     document.getElementById('d7').textContent=fmt(add(7));
-    document.getElementById('d49').textContent=fmt(add(49));
     document.getElementById('d100').textContent=fmt(add(100));
     const y=new Date(base);y.setFullYear(y.getFullYear()+1);
-    document.getElementById('d365').textContent=fmt(y);
     document.getElementById('calcOut').classList.add('show');
   }
 
@@ -505,7 +550,7 @@
       <p>於家祭後、公祭前由法師誦經（蓮池讚、西方接引、心經、往生咒、讚佛偈、念佛、開示、回向）。公祭後起靈、引導靈柩至靈車，續行火化程序；約兩小時後收骨灰。</p>
       <h4>晉塔安骨灰・對年・合爐</h4>
       <p>晉塔誦清涼地菩薩、西方接引、心經往生咒、三皈依與回向。對年於祭日前一天誦超薦經典。合爐多於往生後三年（或對年後選一節日）舉行，將亡者名字寫入祖先牌位、抓香灰入祖先香爐、焚化牌位，並誦經回向。</p>`},
-    taoism:{title:'☯️ 道教禮儀',html:`
+    taoism:{title:'☯︎ 道教禮儀',html:`
       <h4>臨終處理</h4>
       <ol><li>沐浴、更衣：對往生者之尊重</li><li>遮神：喪喜有別</li><li>拼廳：落葉歸根</li><li>舉哀：孝道教育之表現</li><li>門制：對外告白、表明逝者身分</li><li>置腳尾物、燒腳尾紙</li><li>持念往生咒，以仗道力超拔</li></ol>
       <h4>入殮與靈堂佈置</h4>
