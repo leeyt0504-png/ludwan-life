@@ -197,23 +197,28 @@
 
   /* ===== HONORS ===== */
   #honors{background:var(--white)}
-  .honor-banner{margin:44px 0 30px;text-align:center}
-  .honor-banner img{display:inline-block;width:auto;max-width:100%;max-height:150px;
-    border-radius:12px;box-shadow:var(--shadow);border:1px solid var(--line)}
-  .honor-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:34px;align-items:stretch}
-  .honor-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:center}
+  .honor-card{display:flex;align-items:stretch;gap:0;margin:44px 0 30px;
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow)}
+  .honor-card .hc-name{flex:1 1 auto;display:flex;align-items:center;justify-content:center;padding:30px 34px}
+  .honor-card .hc-name img{width:100%;max-width:560px;height:auto;border-radius:8px}
+  .honor-card .hc-qr{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:28px 34px;background:var(--white);border-left:1px solid var(--line)}
+  .honor-card .hc-qr img{width:160px;height:160px;border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 20px -12px rgba(0,0,0,.4)}
+  .honor-card .hc-qr-txt b{display:block;font-family:"Noto Serif TC",serif;color:var(--green-deep);font-size:16px;margin-top:14px}
+  .honor-card .hc-qr-txt span{display:block;color:var(--ink-soft);font-size:13px;margin-top:4px}
+  .honor-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .honor-item{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);
     border-left:4px solid var(--gold);border-radius:10px;padding:16px 18px;transition:.3s}
   .honor-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold)}
   .honor-item .hic{font-size:22px;flex:0 0 auto;line-height:1.5}
   .honor-item p{color:var(--ink);font-size:15px;font-weight:500;line-height:1.55}
-  .honor-qr{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
-    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px}
-  .honor-qr img{width:100%;max-width:180px;margin:0 auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
-  .honor-qr b{display:block;font-family:"Noto Serif TC",serif;color:var(--green-deep);font-size:17px;margin-top:16px}
-  .honor-qr span{display:block;color:var(--ink-soft);font-size:13px;margin-top:4px}
-  @media(max-width:980px){.honor-grid{grid-template-columns:1fr}}
-  @media(max-width:680px){.honor-list{grid-template-columns:1fr}.honor-banner img{max-height:none}}
+  @media(max-width:880px){
+    .honor-card{flex-direction:column}
+    .honor-card .hc-qr{border-left:0;border-top:1px solid var(--line)}
+    .honor-card .hc-name img{max-width:100%}
+    .honor-list{grid-template-columns:1fr}
+  }
 
   /* ===== CONTACT ===== */
   #contact{background:var(--green-deep);color:#fff;padding:96px 0}
@@ -454,23 +459,10 @@
     <div class="sec-tag reveal">榮譽認證</div>
     <h2 class="reveal">獲獎肯定 ・ 值得信賴</h2>
     <p class="sub reveal">多年來秉持誠信與專業，獲政府機關評鑑肯定，並承接公立機構喪葬服務。歡迎加入官方 LINE，由禮儀師為您即時諮詢。</p>
-    <div class="honor-banner reveal">
-      <img src="assets/honor.jpg" alt="甪端精緻生命事業 — 劉世雄禮儀師">
-    </div>
-    <div class="honor-grid">
-      <div class="honor-list reveal">
-        <div class="honor-item"><span class="hic">🏆</span><p>110~112 年度殯葬服務業評鑑優良業者</p></div>
-        <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓遷葬查估優良業者</p></div>
-        <div class="honor-item"><span class="hic">🏛️</span><p>107~112 年臺北市浩然敬老院院民喪葬服務業者</p></div>
-        <div class="honor-item"><span class="hic">🏆</span><p>99~114 年度殯葬服務業評鑑優良業者</p></div>
-        <div class="honor-item"><span class="hic">🏛️</span><p>107~115 年臺北市立浩然敬老院院民喪葬服務業者</p></div>
-        <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓查估遷葬優良業者</p></div>
-      </div>
-      <div class="honor-qr reveal">
-        <img src="assets/line-qr.jpg" alt="官方 LINE 加好友 QRcode">
-        <b>加入官方 LINE</b>
-        <span>掃描 QRcode 即時諮詢</span>
-      </div>
+    <div class="honor-list reveal">
+      <div class="honor-item"><span class="hic">🏆</span><p>99~114 年度殯葬服務業評鑑優良業者</p></div>
+      <div class="honor-item"><span class="hic">🏛️</span><p>107~115 年臺北市立浩然敬老院院民喪葬服務業者</p></div>
+      <div class="honor-item"><span class="hic">📜</span><p>北部地區公墓墳墓查估遷葬優良業者</p></div>
     </div>
   </div>
 </section>
@@ -489,7 +481,9 @@
         <div class="cc-247">
           全年無休 ・ 24 小時諮詢
           <b>02-2567-9292</b>
-          <span>悲傷時刻，讓專業陪您一起承擔</span>
+          <img src="assets/line-qr.jpg" alt="官方 LINE 加好友 QRcode" style="width: 50%; display: block; margin: 0 auto;">
+          <span>悲傷時刻，讓專業陪您一起承擔。</span>
+          <span>掃描 QRcode 即時諮詢</span>
         </div>
       </div>
       <div class="map-wrap reveal">
